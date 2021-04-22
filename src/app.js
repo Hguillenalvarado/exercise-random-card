@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.scss";
 
 window.onload = () => {
   document.querySelector(".card").classList.add(generateRandomSuit());
