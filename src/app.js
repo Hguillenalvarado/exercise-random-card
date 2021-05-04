@@ -1,8 +1,8 @@
-import "./style.scss";
+import "./style.css";
 
 window.onload = () => {
+  document.querySelector(".numbers").innerHTML = generateRandomNumber();
   document.querySelector(".card").classList.add(generateRandomSuit());
-  document.querySelector(".card").innerHTML = generateRandomNumber();
 };
 
 let generateRandomNumber = () => {
@@ -24,10 +24,8 @@ let generateRandomNumber = () => {
   let indexNumbers = Math.floor(Math.random() * numbers.length);
   return numbers[indexNumbers];
 };
-
 let generateRandomSuit = () => {
   let suit = ["diamond", "spade", "heart", "club"];
   let indexSuit = Math.floor(Math.random() * suit.length);
-
   return suit[indexSuit];
 };

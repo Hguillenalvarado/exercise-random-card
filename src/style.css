@@ -1,0 +1,87 @@
+body {
+  background: green;
+}
+.card {
+  display: inline-block;
+  background: white;
+  margin: auto;
+  height: 400px;
+  width: 250px;
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+
+  xsoptext-align: center;
+}
+.numbers {
+  position: absolute;
+  top: 20px;
+  left: 125px;
+  font-size: 80px;
+  line-height: 400px;
+  text-align: center;
+}
+.top-suit {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 80px;
+}
+.bottom-suit {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+}
+.spade:before {
+  content: "\2660";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.spade:after {
+  content: "\2660";
+  position: absolute;
+  right: 1px;
+  bottom: -5px;
+}
+.club:before {
+  content: "\2663";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.club:after {
+  content: "\2663";
+  position: absolute;
+  right: 1px;
+  bottom: -1px;
+}
+.heart:before {
+  content: "\2665";
+  color: red;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.heart:after {
+  content: "\2665";
+  color: red;
+  position: absolute;
+  right: 1px;
+  bottom: -1px;
+}
+.diamond:before {
+  content: "\2666";
+  color: red;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.diamond:after {
+  content: "\2666";
+  color: red;
+  position: absolute;
+  right: 1px;
+  bottom: -1px;
+}
